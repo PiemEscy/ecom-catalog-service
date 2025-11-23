@@ -1,0 +1,9 @@
+- versions
+    # php: PHP 8.1.10
+    # composer: Composer version 2.4.1
+
+- commands:
+    # composer create-project laravel/laravel:^10.* ecom-catalog-service
+    # php artisan make:model Checkout -mfscr
+    # php artisan migrate
+    # php artisan db:seed
