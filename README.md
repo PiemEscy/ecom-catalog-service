@@ -19,6 +19,7 @@ It exposes REST API endpoints for fetching products and product details, which c
 - **Database:** MySQL
 - **Authentication:** JWT Token based
 
+---
 
 ## **Project Setup**
 
