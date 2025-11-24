@@ -18,7 +18,10 @@ RUN apt-get update && apt-get install -y \
     && a2enmod rewrite
 
 # Install Composer
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2 /usr/bin/composer /usr/bin/
+
+# Apache ServerName
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Copy Laravel project files
 COPY . .
